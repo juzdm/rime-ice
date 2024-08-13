@@ -1,0 +1,17 @@
+---
+name: translation
+version: "1.0"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+开心	happy	10
+高兴	happy	10
+快乐	happy	10
+happy	开心	10
+happy	高兴	10
+happy	快乐	10
+悲伤	sad	10
+难过	sad	10
+sad	悲伤	10
+sad	难过	10

@@ -76,6 +76,26 @@ cold_word_drop_processor = require("cold_word_drop.processor")
 cold_word_drop_filter = require("cold_word_drop.filter")
 
 
+local c2e = require("c2etrigger")("Control+e", require("c2e"))
+c2e_translator = c2e.translator
+c2e_processor = c2e.processor
+
+local e2c = require("e2ctrigger")("Control+h", require("e2c"))
+e2c_translator = e2c.translator
+e2c_processor = e2c.processor
+
+local baidu = require("trigger")("Control+t", require("baidu"))
+baidu_translator = baidu.translator
+baidu_processor = baidu.processor
+
+
+local english = require("english")()
+english_processor = english.processor
+english_segmentor = english.segmentor
+english_translator = english.translator
+english_filter = english.filter
+english_filter0 = english.filter0
+
 -- 暴力 GC
 -- 详情 https://github.com/hchunhui/librime-lua/issues/307
 -- 这样也不会导致卡顿，那就每次都调用一下吧，内存稳稳的
@@ -95,3 +115,4 @@ function debug_checker(input, env)
         ))
     end
 end
+

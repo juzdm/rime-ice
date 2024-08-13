@@ -11,9 +11,28 @@ import_tables:
   - cn_dicts/ext      # 扩展词库
   - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
   - cn_dicts/others   # 一些杂项
+  # - external/rime_ice.external.basic_dict
+  #- external/rime_ice.external.sogou_sports_and_leisure.unofficial
+  - external/rime_ice.external.sogou_total_dict.official
+  #- external/rime_ice.external.sogou_humanities.unofficial
+  #- external/rime_ice.external.lettered_word_dict
+  #- external/rime_ice.external.sogou_agriculture_and_fishing_livestock.unofficial
+  #- external/rime_ice.external.sogou_entertainment_and_leisure.unofficial
+  #- external/rime_ice.external.sogou_city_information.unofficial
+  #- external/rime_ice.external.sogou_social_sciences.unofficial
+  - external/english_dict
+  # - external/rime_ice.external.sogou_natural_science.unofficial
+  #- external/rime_ice.external.sogou_life_encyclopedia.unofficial
+  # - external/rime_ice.external.sogou_video_games.unofficial
+  # - external/rime_ice.external.sogou_medicine_and_medicine.unofficial
+  - external/rime_ice.external.sogou_pop
+  # - external/rime_ice.external.sogou_engineering_application.unofficial
+  #  - external/rime_ice.external.sogou_art_design.unofficial
 
   # 建议把扩展词库放到下面，有重复词条时，最上面的权重生效
   # - cn_dicts/mydict
+  - translation  # 添加这一行
+
 ...
 
 # 按需启用：
